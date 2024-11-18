@@ -1,0 +1,112 @@
+body{
+    overflow-x: hidden;
+}
+.card{
+    width: 30%;
+    height: 450px;
+    
+    border-radius: 5px;
+    margin: 20px 15px;
+    float: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.menuimg{
+    width: 100%;
+    height: 60%;
+}
+.cardimg{
+    width: 100%;
+   height: 300px;
+overflow: hidden;
+transition: all 1s;
+}
+
+.cardimg img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.cardimg:hover img{
+transform: scale(1.1);
+transition: all 1s;
+}
+.name{
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.price{
+    margin-left: 13px;
+    font-weight: 700;
+}
+.category{
+    margin-left: 13px;
+}
+.cartbtn{
+    width: 40%;
+    height: 38px;
+    background-color: cadetblue;
+position: absolute;
+right: 20px;
+bottom: 11px;
+    border-radius: 5px;
+    border: none;
+ 
+}
+.menubox{
+    position: relative;
+}
+
+.categorybox{
+    width: 40%;
+    height: 55px;
+    background-color: cadetblue;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.buton{
+    background: transparent;
+    border: none;
+    margin: 16px 18px;
+    position: relative;
+}
+.buton::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    right: 3px;
+transition: all 0.5s;
+}
+.buton:hover::after{
+    width: 90%;
+}
+.cartbox{
+    width: 30%;
+    height: 38px;
+    background-color: cadetblue;
+
+
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+.cartbox button{
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+
+}
+.itemnumber{
+margin-top: 10px;
+width: 25px;
+font-size: 20px;
+}
